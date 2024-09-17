@@ -6,7 +6,14 @@
     <title>Laravel User Management</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+
+<style>
+    .main-container{
+        background-color:#F2F4FF;
+    }
+</style>
+
+<body class='main-container'>
     <div class="container">
         <header>
             <h1>Управление пользователями</h1>
@@ -27,27 +34,28 @@
             @csrf
             <div class="form-group">
                 <label for="name">Имя пользователя</label>
-                <input type="text" name="name" id="name" class="form-control" required>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Иванов Иван Иванович" required>
             </div>
             <div class="form-group">
                 <label for="birth_date">Дата рождения</label>
-                <input type="text" name="birth_date" id="birth_date" class="form-control" required>
+                <input type="date" name="birth_date" id="birth_date" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" required>
+                <input type="email" name="email" id="email" class="form-control" placeholder="example@email.com" required>
             </div>
             <div class="form-group">
                 <label for="login">Логин</label>
-                <input type="text" name="login" id="login" class="form-control" required>
+                <input type="text" name="login" id="login" class="form-control" placeholder="Введите логин:" required>
             </div>
             <div class="form-group">
                 <label for="password">Пароль</label>
-                <input type="password" name="password" id="password" class="form-control" required>
+                <input type="password" name="password" id="password" class="form-control" 
+                placeholder="Используйте сочетание по крайней мере 1 заглавной буквы, 1 цифры и 1 специального символа (#, @, &)" required>
             </div>
             <div class="form-group">
                 <label for="phone">Номер</label>
-                <input type="tel" name="phone" id="phone" class="form-control" required>
+                <input type="tel" name="phone" id="phone" class="form-control" placeholder="+7(999)555-33-01" required>
             </div>
             <div class="form-group">
                 <label for="photo">Фото пользователя (опционально)</label>

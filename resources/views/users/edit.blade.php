@@ -6,7 +6,13 @@
     <title>Laravel User Management</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<style>
+    .main-container{
+        background-color:#F2F4FF;
+    }
+</style>
+
+<body class='main-container'>
     <div class="container">
         <header>
             <h1>Управление пользователями</h1>
